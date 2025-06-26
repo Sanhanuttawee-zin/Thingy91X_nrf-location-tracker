@@ -1,0 +1,18 @@
+# Copyright (c) 2024 Nordic Semiconductor
+# SPDX-License-Identifier: LicenseRef-Nordic-5-Clause
+
+manifest:
+  self:
+    west-commands: scripts/west-commands.yml
+    path: project
+
+  remotes:
+    - name: ncs
+      url-base: https://github.com/nrfconnect
+
+  projects:
+    - name: nrf
+      remote: ncs
+      repo-path: sdk-nrf
+      revision: 734014a82b5f373e6a5b1ef5c96699069b0f8826
+      import: true

@@ -1,0 +1,96 @@
+# Build directories
+build/
+build_*/
+_build/
+
+# West
+.west/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+*.egg-info/
+dist/
+*.egg
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-*
+
+# Nordic specific
+twister-out*/
+twister_report.xml
+twister_out/
+
+# Documentation build
+docs/_build/
+docs/doxygen/
+_build/
+_static/
+_templates/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.orig
+*.rej
+
+# Generated files
+generated/
+*.generated.h
+
+# MCUboot/bootloader specific
+mcuboot.bin
+signed.bin
+signed.hex
+
+# Credentials and keys (be careful not to commit sensitive data)
+*.pem
+*.key
+*.crt
+*.p12
+credentials/
+
+# Memory reports
+memory_report/
+
+# Test artifacts
+test_results/
+coverage/
+*.gcov
+*.gcda
+*.gcno
+
+# Backup files
+*.bak
+*.backup
+
+# OS specific
+Thumbs.db
+.directory
+
+# Project specific
+/project/app/pm_static.yml
+/project/app/partition_manager_report.json
+.west
+.vscode
+bootloader
+module
+nrf
+nrfxlib
+test
+tools
+zephyr

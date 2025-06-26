@@ -1,0 +1,23 @@
+config-object = {
+    ? "config": {
+        ? "update_interval": uint .size 4,
+        ? "led": {
+            "red": uint .size 1,
+            "green": uint .size 1,
+            "blue": uint .size 1,
+            ? "duration_on_msec": uint .size 4,
+            ? "duration_off_msec": uint .size 4,
+            ? "repetitions": int
+        }
+    },
+    ? "led": {
+        "red": uint .size 1,
+        "green": uint .size 1,
+        "blue": uint .size 1,
+        ? "duration_on_msec": uint .size 4,
+        ? "duration_off_msec": uint .size 4,
+        ? "repetitions": int
+    },
+    ? "desiredConnections": [* tstr],
+    * tstr => any
+}
